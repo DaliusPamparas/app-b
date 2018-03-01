@@ -2,4 +2,17 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background-color: #ddff00;
+}
+.titletab{
+  color: red;
+}
+.lang{
+  display: flex;
+  justify-content: center;
+}
+.lang>li{
+ list-style-type: none;
+ padding: 10px;
+ cursor: pointer;
 }
