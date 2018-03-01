@@ -1,18 +1,24 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Badge from './Badge';
+import OtherBadge from './OtherBadge';
 import './App.css';
 
+var userData = {
+  img : 'http://cdn3-www.cattime.com/assets/uploads/gallery/32-impossibly-cute-kittens/cute-kitten-23.jpg',
+  name : 'Other name'
+}
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <Badge 
+        img='http://cdn3-www.cattime.com/assets/uploads/gallery/32-impossibly-cute-kittens/cute-kitten-23.jpg'
+        name='Some cat'
+        />
+       <OtherBadge
+        user ={userData}
+       />
+       
       </div>
     );
   }
