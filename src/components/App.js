@@ -1,15 +1,15 @@
-import React, { Component } from 'react';
-import Popular from './Popular';
+import React from 'react';
+import {Route} from 'react-router-dom';
+import HomePage from './components/pages/HomePage';
 
 import './App.css';
 
+const App = () => (
+ <div>
+   <Route path="/" exact component={HomePage}/>
+</div>
+);
 
-class App extends Component {
-  render() {
-    return (
-     <Popular />
-    );
-  }
-}
+
 
 export default App;
