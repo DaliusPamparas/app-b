@@ -5,8 +5,8 @@ const Map = () => (
         <h1>
            Mapp
            </h1>
-        MAP
-        <LoginForm/>
+       
+       
    </div>
    );
    export default Map;
