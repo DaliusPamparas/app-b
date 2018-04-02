@@ -9,7 +9,7 @@ class UserApiBild extends Component {
         };
     }
     componentDidMount(){
-        fetch('https://randomuser.me/api/?results=500')
+        fetch('https://randomuser.me/api/?results=20')
         .then(results => {
             return results.json();
         }).then(data => {
